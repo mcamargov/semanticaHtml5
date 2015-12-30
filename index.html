@@ -4,6 +4,9 @@
   <title>Semantica de HTML5 </title>
 	<meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">   
+ <script type="text/javascript" src="bootstrap.min.js"></script>
+    
 </head>
 <body>
 	<div id="contenedor">
@@ -11,16 +14,26 @@
 			<hgroup>
 				<h1> Mi primer HTML5 </h1>
 			</hgroup>
-			<nav>
-				<ul>
-					<li><a href="#"> Inicio </a></li>
-					<li><a href="#seccion1"> Estructura </a></li>
-					<li><a href="#seccion2"> Definición </a></li>
-					<li><a href="#seccion3"> Recursos </a></li>
-				
-				</ul>
+            
+			<nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-principal">
+                        <span class="sr-only">Navegaciòn</span>
+                        <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"> Inicio</a></li>
+                        <li><a href="#seccion1"> Estructura </a></li>
+                        <li><a href="#seccion2"> Definición </a></li>
+                        <li><a href="#seccion3"> Recursos </a></li>
+                    </ul>
+              </div>
 			</nav>
-		</header>
+        </header>
 		<div id="envoltura">
 			<section id="seccion1">
 				<article> 
@@ -97,7 +110,8 @@ CSS3: Nos ofrece una nueva gran variedad de opciones para hacer diseños más so
 
 </article>
 
-			</section>     
+			</section>
+        
         
         
         
@@ -110,5 +124,6 @@ CSS3: Nos ofrece una nueva gran variedad de opciones para hacer diseños más so
 			<p>Aprendiendo HTML5 - Marlen Camargo - Mapas y Datos SAS. <a href="http://www.mapasydatos.com"></a> 2015</p>
 		</div>
 	</footer>
+
 </body>
 </html>
